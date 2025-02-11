@@ -1,1 +1,1 @@
-<img src="p14.svg">
+<img src="https://yourusername.github.io/your-repo/docs/animated.svg">
