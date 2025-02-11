@@ -1,0 +1,41 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1b0738" />
+            <stop offset="50%" stop-color="#150312" />
+            <stop offset="100%" stop-color="#2a0113" />
+        </linearGradient>
+        <clipPath id="background-clip">
+            <rect x="25" y="25" width="1150" height="580" rx="24" fill="black" />
+        </clipPath>
+    </defs>
+    <rect x="25" y="25" width="1150" height="580" rx="24" fill="url(#bgGradient)" />
+
+    <!-- Multiple moving stars -->
+    <g clip-path="url(#background-clip)">
+        <circle cx="200" cy="500" r="2" fill="white">
+            <animate attributeName="cy" values="630; 0" dur="4s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="200; 300" dur="4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="300" r="2" fill="white">
+            <animate attributeName="cy" values="630; 100" dur="5s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="400; 450" dur="5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="600" cy="400" r="2" fill="white">
+            <animate attributeName="cy" values="630; 200" dur="6s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="600; 700" dur="6s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="800" cy="200" r="2" fill="white">
+            <animate attributeName="cy" values="630; 50" dur="7s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="800; 850" dur="7s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1000" cy="100" r="2" fill="white">
+            <animate attributeName="cy" values="630; 30" dur="8s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="1000; 1050" dur="8s" repeatCount="indefinite" />
+        </circle>
+    </g>
+
+    <!-- Replace logo with "Hi" text -->
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="50"
+        font-family="Arial, sans-serif">hello friend.</text>
+</svg>
